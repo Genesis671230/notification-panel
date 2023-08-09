@@ -5,9 +5,6 @@ export default function Home() {
    <div className="flex justify-center overflow-scroll  text-[2vw] font-bold">
       <Dashboard/>
       
-      <div>
-          
-      </div>
    </div>
   )
 }

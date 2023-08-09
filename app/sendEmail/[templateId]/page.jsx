@@ -1,4 +1,5 @@
 "use client"
+import { Input } from '@/components/ui/input';
 import React, { useEffect, useState } from 'react'
 
 const page = ({params}) => {
@@ -19,7 +20,14 @@ const page = ({params}) => {
 
 
   return (
-    <div>SendEmail</div>
+    <div className='flex'>
+      <div className='flex-1' dangerouslySetInnerHTML={{__html:emailTemplate}}>
+
+      </div>
+      <div className='flex-1'>
+        <Input/>
+      </div>
+    </div>
   )
 }
 

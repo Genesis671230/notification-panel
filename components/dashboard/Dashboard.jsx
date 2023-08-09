@@ -19,12 +19,12 @@ const Dashboard = () => {
     <div className='flex hide-scrollbar'>
       {allEmailsHtml?.map((design,index)=>(
 
-        <div className='h-[14rem] my-20 w-[20rem]' onClick={()=>window.location= (`sendEmail/${index}`)}>
+        <div className='h-auto my-20 w-[20rem]' onClick={()=>window.location= (`sendEmail/${index+1}`)}>
         <div>
-            <span className='bg-black text-white  p-10'>{index}</span>
-        {/* <div dangerouslySetInnerHTML={{__html:design}}> */}
+            <span className='bg-black text-white  p-10'>{index+1}</span>
+        {/* <div dangerouslySetInnerHTML={{__html:design}}>
+        </div> */}
         </div>
-        {/* </div> */}
          </div>
       ))}
         {/* <Chats/> */}
